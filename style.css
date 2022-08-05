@@ -7,7 +7,7 @@
 /* ====================NAVBAR=================*/
 
 nav{
-    width: 85%;
+    width: 88%;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -18,7 +18,7 @@ nav li{
 }
 nav li a{
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.05vw;
     color: black;
     font-weight: 400;
 }
@@ -52,6 +52,57 @@ nav li a::after{
     justify-content: space-between;
     width: 15%;
 }
+
+li a:hover, .dropdown:hover .dropbtn {
+    color: #20507D;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 15vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-top: 0.2vw solid #102E4A;
+    margin-top: 0.3%;
+    transition: 0.5s;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1vw  ;
+  }
+
+  .dropdown-content a::after{
+    content: "";
+    display: none;
+    margin: auto;
+    height: 0.1vw;
+    width: 0;
+    margin-top: 0.3vw;
+    background-color: transparent;
+    transition: all 0.3s;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+   visibility: visible;
+   opacity: 1;
+   
+  }
+
+
 
 /*==================BUNDLE PAGE ONE SECTION ONE================*/
 .bundleone-section-one{
@@ -352,3 +403,408 @@ ul{
 
 
 
+
+
+/*====================================================================*/
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 3vw 0.5vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#home-head{
+    font-size: 3.5vw;
+}
+
+
+/*===============SHOP PRODUCTS===================*/
+
+.shop-categories{
+    background-color: #F4F6F8;
+    padding: 5vw 0vw 5vw 0vw;
+    margin-top: 5%;
+}
+.shop-products{
+    width: 75%;
+    margin: auto;
+}
+
+.shop-products h3{
+    color: #4C6A46;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.shop-products h1{
+    font-size: 2.3vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.shop-products-col{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.img-getter{
+    height: 17vw;
+    width: 16vw;
+    background-color: red;
+    border-radius: 1vw;
+}
+.category h4{
+    font-size: 1.3vw;
+    margin-top: 10%;
+    font-weight: 500;
+}
+
+.category p{
+    font-size: 1vw;
+    margin-top: 5%;
+    font-weight: 400;
+    color: #646566;
+}
+
+
+/*===================HOME ACTIVES===========*/
+
+.home-key-actives{
+    margin-top: 10%;
+}
+
+.home-key-actives-headline{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.actives-headline-img{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px rgb(163, 163, 163);
+}
+
+.actives-headline-content{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    align-items: center;
+}
+.actives-headline-content h1{
+    font-size: 3vw;
+    padding-right: 3vw;
+    font-weight: 400;
+}
+
+
+.home-actives-one{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+
+.home-actives-one-content h1{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.home-actives-one-content p{
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 195.5%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.home-actives-one-img{
+    width: 30vw;
+    height: 34vw;
+    background-color: red;
+    border-top-right-radius: 10vw;
+    border-bottom-left-radius: 10vw;
+}
+.icon-title{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.icon-title img{
+    width: 4vw;
+}
+.icon-title h5{
+    letter-spacing: 0.1vw;
+    font-size: 0.8vw;
+    
+}
+.icon-title h5:nth-child(3){
+    color: #4C6A46;
+}
+
+/*=============HOME CONTENT====*/
+
+.home-about-content{
+    background: linear-gradient(180deg, #4C6A46 0%, #1C3F15 100%);
+    padding: 5vw 0vw 9vw 10vw;
+    margin-top: 10%;
+}
+
+.home-about-content-one{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.home-about-content-one h1{
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+.home-about-content-one img{
+    width: 6vw;
+}
+
+.home-about-content-two{
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.home-about-content-two p{
+    font-size: 1vw;
+    color: white;
+    line-height: 186.5%;
+    font-weight: 400;
+}
+/*============TESTIMONIALS=========*/
+
+.testimonials{
+    margin-top: 6%;
+}
+.testimonials h1{
+    text-align: center;
+    font-size: 2.4vw;
+}
+.tes-container{
+    width: 80%;
+    background-color: #F4F6F8;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.tes-box{
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.tesone{
+    width: 100%;
+}
+
+.tesone h2{
+    font-size: 1.6vw;
+    line-height: 186.5%;
+    font-weight: 400;
+}
+
+.tes-profile{
+    display: flex;
+    margin-top: 15%;
+    align-items: center;
+}
+.tes-profile-img{
+    width: 3vw;
+    height: 3vw;
+    background-color: red;
+    border-radius: 100%;
+    
+}
+
+.test-profile-content{
+    margin-left: 5%;
+}  
+.test-profile-content h3{
+    font-size: 1vw;
+}
+.test-profile-content p{
+    font-size: 1.1vw;
+}
+
+/*==========ABOUT==========*/
+
+.about-head-section{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-head-section-content h1{
+    font-size: 3.6vw;
+    font-weight: 600;
+    line-height: 161%;
+}
+.about-head-section-content p{
+    font-size: 1vw;
+    line-height: 220%;
+    color: #696969;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.about-head-img{
+    width: 28vw;
+    height: 35vw;
+    background-color: red;
+}
+.about-head-buttons{
+    margin-top: 8%;
+}
+
+/*====table of contetns*/
+
+.about-table-content{
+    background-color: white;
+    width: 75%;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 3vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.1vw 0.1vw 20px rgb(200, 200, 200);
+}
+.table-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table-content h1{
+    font-size: 1.1vw;
+    padding-left: 1vw;
+    font-weight: 600;
+    color: #3D3D3D;
+}
+.table-content img{
+    width: 2.5vw;
+}
+
+/*===========================*/
+.about-info{
+    margin-top: 10%;
+}
+.about-info-one{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+}
+.about-info-content h1{
+    font-size: 2.6vw;
+    color: #4C6A46;
+}
+.about-info-content p{
+    font-size: 1.1vw;
+    line-height: 185%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.about-info-content a{
+    font-size: 1vw;
+    font-weight: 500;
+    color: #4C6A46;
+}
+.about-info-img img{
+    width: 35vw;
+}
+
+#readmoreimg{
+    width: 3vw;
+}
+
+/*=================*/
+
+.about-founder{
+    background-color: #F4F6F8;
+    width: 80%;
+    margin: auto;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
